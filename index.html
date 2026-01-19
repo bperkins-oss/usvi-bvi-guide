@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Bill & Lara's USVI & BVI Highlights</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #0c2340, #1a5276); color: white; padding: 15px; text-align: center; }
+        .header h1 { font-size: 1.3em; margin-bottom: 3px; }
+        .header p { font-size: 0.8em; opacity: 0.9; }
+        .map-container { width: 100%; height: 300px; background: #1a5276; }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+        .category { background: linear-gradient(135deg, #0c2340, #1a5276); color: white; padding: 10px 15px; font-weight: bold; font-size: 0.9em; margin-top: 10px; }
+        .location { background: white; padding: 12px 15px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+        .location:active { background: #f0f0f0; }
+        .icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+        .icon.home { background: linear-gradient(135deg,#667eea,#764ba2); }
+        .icon.favorite { background: #ff6b6b; border: 2px solid gold; }
+        .icon.beach { background: #ffd93d; }
+        .icon.restaurant { background: #ff6b6b; }
+        .icon.bar { background: #ff6b9d; }
+        .icon.snorkel { background: #4ecdc4; }
+        .icon.activity { background: #45b7d1; }
+        .info { flex: 1; min-width: 0; }
+        .name { font-weight: 600; font-size: 0.95em; color: #0c2340; }
+        .desc { font-size: 0.8em; color: #666; margin-top: 2px; }
+        .arrow { color: #ccc; font-size: 1.2em; }
+        .legend { background: white; padding: 12px 15px; display: flex; flex-wrap: wrap; gap: 10px; border-bottom: 2px solid #0c2340; }
+        .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.75em; }
+        .legend-icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bill & Lara's USVI & BVI Highlights</h1>
+        <p>Tap any location to open in Maps</p>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d242117.7!2d-64.85!3d18.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1705600000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="legend">
+        <div class="legend-item"><div class="legend-icon icon home">🏠</div> Home</div>
+        <div class="legend-item"><div class="legend-icon icon favorite">⭐</div> Favorites</div>
+        <div class="legend-item"><div class="legend-icon icon beach">🏖️</div> Beaches</div>
+        <div class="legend-item"><div class="legend-icon icon restaurant">🍽️</div> Restaurants</div>
+        <div class="legend-item"><div class="legend-icon icon bar">🍹</div> Bars</div>
+        <div class="legend-item"><div class="legend-icon icon snorkel">🤿</div> Snorkeling</div>
+        <div class="legend-item"><div class="legend-icon icon activity">🎯</div> Activities</div>
+    </div>
+
+    <div class="category">🏠 Home Base</div>
+    <a class="location" href="https://maps.apple.com/?q=18.3185945,-64.8395588"><div class="icon home">🏠</div><div class="info"><div class="name">Home Base</div><div class="desc">Your villa with infinity pool overlooking St. John!</div></div><div class="arrow">›</div></a>
+
+    <div class="category">⭐ Our Favorites (11)</div>
+    <a class="location" href="https://maps.apple.com/?q=18.3368,-64.9730"><div class="icon favorite">⭐</div><div class="info"><div class="name">3 Palms</div><div class="desc">Our favorite restaurant! Must visit.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.3362,-64.9735"><div class="icon favorite">⭐</div><div class="info"><div class="name">Tarpon's Table</div><div class="desc">Excellent waterfront dining with fresh seafood.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.342,-64.931"><div class="icon favorite">⭐</div><div class="info"><div class="name">Cuvée</div><div class="desc">Upscale Caribbean fusion cuisine.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.3415,-64.9305"><div class="icon favorite">⭐</div><div class="info"><div class="name">Bibi</div><div class="desc">Great ambiance and delicious food.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.365,-64.92"><div class="icon favorite">⭐</div><div class="info"><div class="name">Fish Bar</div><div class="desc">North Side - fresh local fish, trendy drinks. Great Sunday brunch!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.32,-64.86"><div class="icon favorite">⭐</div><div class="info"><div class="name">Lime Out</div><div class="desc">Floating taco bar - swim up for amazing tacos!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.331,-64.796"><div class="icon favorite">⭐</div><div class="info"><div class="name">Extra Virgin Bistro</div><div class="desc">Best in Cruz Bay! Mediterranean-Caribbean fusion. Reserve ahead.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.347,-64.718"><div class="icon favorite">⭐</div><div class="info"><div class="name">Zozo's</div><div class="desc">Upscale Italian with stunning sunset views.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.3315,-64.7955"><div class="icon favorite">⭐</div><div class="info"><div class="name">Morgan's Mango</div><div class="desc">Caribbean restaurant with creative island cuisine.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.353,-64.766"><div class="icon favorite">⭐</div><div class="info"><div class="name">Trunk Bay</div><div class="desc">World-famous beach! Underwater snorkel trail.</div></div><div class="arrow">›</div></a>
+
+    <div class="category">🏖️ Beaches (14)</div>
+    <a class="location" href="https://maps.apple.com/?q=18.372,-64.9356"><div class="icon beach">🏖️</div><div class="info"><div class="name">Magens Bay</div><div class="desc">Famous calm beach - go on non-cruise ship days!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.339,-64.852"><div class="icon beach">🏖️</div><div class="info"><div class="name">Sapphire Beach</div><div class="desc">Lively East End beach. Beach bar, pizza, snorkel rentals.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.348,-64.969"><div class="icon beach">🏖️</div><div class="info"><div class="name">Brewers Bay</div><div class="desc">Great for turtles, rays, eagle rays, starfish!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.378,-64.948"><div class="icon beach">🏖️</div><div class="info"><div class="name">Hull Bay</div><div class="desc">Great snorkeling! The Shack has fish tacos.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.315,-64.95"><div class="icon beach">🏖️</div><div class="info"><div class="name">Honeymoon Beach (Water Island)</div><div class="desc">Nice swimming, Dinghy's Beach Bar with Sunday live music.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.353,-64.783"><div class="icon beach">🏖️</div><div class="info"><div class="name">Honeymoon Beach (St. John)</div><div class="desc">20-min hike down but worth it! Has a beach bar.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.355,-64.775"><div class="icon beach">🏖️</div><div class="info"><div class="name">Hawksnest Bay</div><div class="desc">Beautiful quiet beach with good snorkeling.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.358,-64.758"><div class="icon beach">🏖️</div><div class="info"><div class="name">Cinnamon Bay</div><div class="desc">Large beach with restaurant, bathrooms. Great for families.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.365,-64.738"><div class="icon beach">🏖️</div><div class="info"><div class="name">Francis Bay</div><div class="desc">Peaceful beach with bird watching and snorkeling.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.302,-64.705"><div class="icon beach">🏖️</div><div class="info"><div class="name">Salt Pond Bay</div><div class="desc">Starting point for Ram Head hike. Beautiful secluded beach.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.445,-64.735"><div class="icon beach">🏖️</div><div class="info"><div class="name">Sandy Cay (BVI)</div><div class="desc">Postcard-perfect uninhabited sand island.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.428,-64.658"><div class="icon beach">🏖️</div><div class="info"><div class="name">Cane Garden Bay (BVI)</div><div class="desc">Tortola's most popular beach with beach bars.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.438,-64.708"><div class="icon beach">🏖️</div><div class="info"><div class="name">Smugglers Cove (BVI)</div><div class="desc">Secluded beautiful beach. Worth the bumpy drive!</div></div><div class="arrow">›</div></a>
+
+    <div class="category">🍽️ Restaurants (11)</div>
+    <a class="location" href="https://maps.apple.com/?q=18.33,-64.942"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Oceana</div><div class="desc">Frenchtown, right on the water. Reservations advised.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.339,-64.853"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">SeaSalt</div><div class="desc">Second floor at Sapphire Beach. Beautiful ocean views.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.319,-64.854"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Pizza Pi</div><div class="desc">Famous floating pizza boat at Christmas Cove!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.358,-64.865"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Lovango Cay</div><div class="desc">Beach resort and restaurant accessible by boat.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.3312,-64.7958"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">La Tapa</div><div class="desc">Excellent Spanish tapas in Cruz Bay.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.318,-64.618"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Pirates Bight (BVI)</div><div class="desc">Beach restaurant - Norman Island inspired Treasure Island!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.355,-64.578"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Peter Island Resort (BVI)</div><div class="desc">Upscale resort with fine dining restaurants.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.388,-64.512"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Cooper Island Beach Club (BVI)</div><div class="desc">Eco-friendly resort with restaurant and rum bar.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.495,-64.368"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Saba Rock (BVI)</div><div class="desc">Tiny island restaurant. Tarpon feeding at sunset!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.505,-64.355"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Bitter End Yacht Club (BVI)</div><div class="desc">Classic yacht club with great food.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.485,-64.328"><div class="icon restaurant">🍽️</div><div class="info"><div class="name">Oil Nut Bay (BVI)</div><div class="desc">Ultra-luxury resort with stunning infinity pool.</div></div><div class="arrow">›</div></a>
+
+    <div class="category">🍹 Bars (5)</div>
+    <a class="location" href="https://maps.apple.com/?q=18.3419,-64.9315"><div class="icon bar">🍹</div><div class="info"><div class="name">Taphus Beer House</div><div class="desc">Open air bar with craft beer options & snacks.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.327,-64.775"><div class="icon bar">🍹</div><div class="info"><div class="name">Windmill Bar</div><div class="desc">Stop before car ferry. VIEW is unmatched!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.432,-64.755"><div class="icon bar">🍹</div><div class="info"><div class="name">Soggy Dollar Bar (BVI)</div><div class="desc">White Bay - birthplace of the Painkiller!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.317,-64.619"><div class="icon bar">🍹</div><div class="info"><div class="name">Willy T's (BVI)</div><div class="desc">Legendary floating bar! Jump off the top deck.</div></div><div class="arrow">›</div></a>
+
+    <div class="category">🤿 Snorkeling Spots (6)</div>
+    <a class="location" href="https://maps.apple.com/?q=18.3,-64.827"><div class="icon snorkel">🤿</div><div class="info"><div class="name">Little St. James</div><div class="desc">Excellent reef snorkeling spot.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.362,-64.745"><div class="icon snorkel">🤿</div><div class="info"><div class="name">Maho Bay</div><div class="desc">Famous for sea turtles grazing on seagrass!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.368,-64.718"><div class="icon snorkel">🤿</div><div class="info"><div class="name">Waterlemon Cay</div><div class="desc">Premier snorkeling with amazing coral and fish.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.328,-64.628"><div class="icon snorkel">🤿</div><div class="info"><div class="name">The Indians (BVI)</div><div class="desc">World-class snorkeling. Colorful fish, healthy coral.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.316,-64.62"><div class="icon snorkel">🤿</div><div class="info"><div class="name">The Caves (BVI)</div><div class="desc">Swim into sea caves! Bring underwater flashlight.</div></div><div class="arrow">›</div></a>
+
+    <div class="category">🎯 Activities (6)</div>
+    <a class="location" href="https://maps.apple.com/?q=18.322,-64.856"><div class="icon activity">🎯</div><div class="info"><div class="name">Double Header Fishing</div><div class="desc">Fishing charter for marlin, mahi, and more.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.3385,-64.8525"><div class="icon activity">🎯</div><div class="info"><div class="name">Parasail VI</div><div class="desc">See the islands from 400+ feet above!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.338,-64.853"><div class="icon activity">🎯</div><div class="info"><div class="name">Wake Surfing</div><div class="desc">Ride endless waves. Great for all skill levels!</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.295,-64.7"><div class="icon activity">🎯</div><div class="info"><div class="name">Ram Head Trail</div><div class="desc">Hike with breathtaking views! Bring water.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.37,-64.72"><div class="icon activity">🎯</div><div class="info"><div class="name">Annaberg Ruins</div><div class="desc">Scenic trail with historic Sugar Mill ruins.</div></div><div class="arrow">›</div></a>
+    <a class="location" href="https://maps.apple.com/?q=18.432,-64.447"><div class="icon activity">🎯</div><div class="info"><div class="name">The Baths (BVI)</div><div class="desc">Must-see! Giant boulders create magical grottoes.</div></div><div class="arrow">›</div></a>
+
+</body>
+</html>
