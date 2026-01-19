@@ -425,6 +425,10 @@
 
         // Curated image collections for each location type and specific locations
         const imageLibrary = {
+            "Home Base": [
+                "home-pool.jpg",
+                "home-interior.jpg"
+            ],
             // Specific location images (Unsplash direct links)
             "Magens Bay": [
                 "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=400&h=300&fit=crop",
@@ -506,6 +510,10 @@
                 ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop",
                  "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=300&fit=crop"]
             ]
+            ,home: [
+                ["home-pool.jpg",
+                 "home-interior.jpg"]
+            ]
         };
 
         // Function to get images for a location
@@ -524,7 +532,7 @@
         const locations = [
             // HOME BASE
             { name: "Home Base", lat: 18.3185945, lng: -64.8395588, island: "St. Thomas", category: "home",
-              description: "Your villa with infinity pool overlooking St. John!", images: ["home-pool.jpg", "home-interior.jpg"] },
+              description: "Your villa with infinity pool overlooking St. John!" },
             // ST. THOMAS - FAVORITES
             { name: "3 Palms", lat: 18.3368, lng: -64.9730, island: "St. Thomas", category: "favorite",
               description: "Personal favorite restaurant! A must-visit dining experience on St. Thomas.", url: "" },
